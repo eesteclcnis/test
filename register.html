@@ -1,0 +1,139 @@
+<html>
+ <head>
+   <title>Naverra International Film Festival</title>
+   <link rel="icon" href="imgs/logo.png">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <script src="js.js"></script>
+  </head>
+ <body>
+   <div class="topnav full" id="myNav">
+      <img src="imgs/logo-header.png" id="logo">
+	  <img src="imgs/mid-logo.png" id="mid-logo">
+	  <img src="imgs/logo.png" id="small-logo">
+      <a href="register.html" class="active">Register</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="index.html" >Home</a>
+      <a href="javascript:void(0);" id="icon-container" class="icon" onclick="openMenu()">
+        <div class="container" id="icon">
+         <div class="bar1" id="bar1"></div>
+         <div class="bar2" id="bar2"></div>
+         <div class="bar3" id="bar3"></div>
+        </div>
+      </a>
+   </div>
+   <div onclick="closeNav()" >
+   
+   <div id="dim"></div>
+   <div class="container-fluid" style="padding:0;position:absolute;top:12vh;text-align:center;">
+   <div class="container-fluid my-auto diag">
+   <div id="reg">
+   
+   
+		<div class="d-sm-flex flex-sm-row justify-content-sm-between">
+		<div>
+      <textarea type="text" class="txt mt-5 h5" rows="1" id="name" placeholder="Name"></textarea>
+	  <p id="noname" style="visibility:hidden;color:red;font-size:2vh">*This field is required</p>
+	  </div>
+	  <br>
+	  <div>
+        <textarea type="text" class="txt mt-5 h5" rows="1" id="email" placeholder="Email"></textarea>
+		<p id="invalid" style="visibility:hidden;color:red;font-size:2vh"></p>
+		</div>
+		</div>
+        <br>
+		
+		<div class="d-sm-flex flex-sm-row justify-content-sm-between">
+		<div>
+		<strong class="mt-5">Select film:
+		</strong>
+		</div>
+		<div>
+        <select class="mt-3 h5" id="films">
+          <option value="apollo 11">Apollo 11</option>
+          <option value="1917">1917</option>
+          <option value="dark waters">Dark waters</option>
+          <option value="john wick">John Wick</option>
+          <option value="joker">Joker</option>
+          <option value="little women">Little Women</option>
+          <option value="marriage story">Marriage story</option>
+          <option value="midsommar">Midsommar</option>
+          <option value="parasite">Parasite</option>
+          <option value="the irishman">The Irishman</option>
+          <option value="the lighthouse">The Lighthouse</option>
+          <option value="the two popes">The Two Popes</option>
+        </select>
+		</div>
+		</div>
+		<br>
+		<br>
+		<div class="d-sm-flex flex-sm-row justify-content-sm-between">
+        
+		<div>
+		<strong class="mt-5">Select number of tickets:</strong>
+		</div>
+		<div >
+		<select class="mt-3 h5 " id="ticketNum">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+		</div>
+		</div>
+		<br>
+        <button type="button" id="register" class="text-center h2 mt-5" onclick="register()">Register</button>
+		<div id="rev">
+		</div>
+		</div>
+		</div>
+		
+		<div class="footer" id="footer">
+	  <div style="margin-left:10vw;margin-right:10vw;text-align:center">
+	  <div>
+	  <br><br>
+	  <div class="row">
+	  	  <div class="col-12 col-md-6 info" >
+		  <h1>More info</h1>
+		  
+		  <h4><i class="fa fa-phone"> +34 663 30 30 60</i></h4>
+		  <h4><i class="fa fa-envelope"> info@navarrafestival.com</i></h4>
+		  </div>
+	  	  <div class="col-12 col-md-6 info" >
+		  <h1>Follow us</h1>
+		  <h4><a href="https://www.instagram.com/navarrafestival/"><i class="fa fa-instagram"></i></a>
+		  <a href="https://twitter.com/NIFFestival"><i class="fa fa-twitter"></i></a>
+		  <a href="https://www.facebook.com/Navarrafestival/"><i class="fa fa-facebook"></i></a></h4>
+		  </div>
+	  </div>
+	  <div >
+	  <br><br>
+	  <a class="weatherwidget-io" href="https://forecast7.com/en/42d81n1d65/pamplona/" 
+	     data-label_1="PAMPLONA" data-label_2="WEATHER" data-icons="Climacons Animated" data-days="5" data-theme="dark"
+		 data-basecolor="#040F0F" data-accent="#000103" data-textcolor="#f2f2f2" 
+		 data-highcolor="#ffffff" data-lowcolor="#d7d7d7" 
+		 data-suncolor="#de792d" data-mooncolor="#eeeee" 
+		 data-cloudcolor="#ffffff" data-cloudfill="#323232" 
+		 data-raincolor="#8bc1e5" data-snowcolor="#ffffff"  >
+	     PAMPLONA WEATHER
+	  </a>
+	  </div>
+	  </div>
+    </div>
+	</div>
+ 
+		
+      </div>
+   </div>
+ </body>
+</html>

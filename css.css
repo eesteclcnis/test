@@ -1,0 +1,377 @@
+:root{
+	--primary-color:#040F0F;
+	--highlight-color:#DADAD9;
+	--highlight-text:black;
+	--second-highlight-color:#E64A28;
+	--second-highlight-text:white;
+	--regular-text:#f2f2f2;
+	--bg-color:#000103;
+	--input-color:#fff;
+}
+
+#reg{
+	border-radius:30px;
+	/*border:1px solid black;*/
+	color:var(--primary-color);
+	background-color:;
+	padding:4vh 4vw;
+	margin: 15vh 30vw;
+    background-image: linear-gradient(45deg, var(--second-highlight-color) 50%, white 50%);
+	text-align:center;
+}
+
+
+.diag {
+	padding:0;
+    background-image: linear-gradient(45deg, white 50%, var(--second-highlight-color) 50%);
+}
+#reg strong{
+	color:black;
+	font-size:3vh;
+}
+
+body {
+  margin: 0;
+  background-color:var(--bg-color);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow:auto;
+  color:var(--second-highlight-text);
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--highlight-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--second-highlight-color);
+}
+
+#logo{
+	height:10vh;
+	float:left;
+    display: block;
+	margin:1vh 2vh;
+}
+#mid-logo{
+	display:none;
+}
+#small-logo{
+	display:none;
+}
+.topnav {
+  overflow: hidden;
+  position:fixed;
+  width:100vw;
+  z-index:80;
+}
+.topnav.full{
+	
+  background-color:var(--primary-color);
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: var(--regular-text);
+  text-align: center;
+  padding: 4vh 2vh;
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+.topnav a:hover {
+  background-color: var(--highlight-color);
+  color: var(--highlight-text);
+  
+
+}
+
+.topnav a.active {
+  background-color: var(--second-highlight-color);
+  color: var(--second-highlight-text);
+  pointer-events:none;
+  
+}
+a{
+	color:var(--second-highlight-text);
+}
+.topnav .icon {
+  display: none;
+}
+#icon-container:hover > #icon #bar2{
+	background-color:var(--highlight-text);
+}
+#icon-container:hover > #icon #bar3{
+	background-color:var(--highlight-text);
+}
+#icon-container:hover > #icon #bar1{
+	background-color:var(--highlight-text);
+}
+.info{
+	    font-size:2vh;
+		margin-bottom:2vh;
+	}
+@media (min-width:1000px) and (max-width:1200px){
+	#reg{
+		margin:15vh 20vw;
+	}
+	#mid-logo{
+	height:10vh;
+	float:left;
+    display: block;
+	margin:1vh 2vh;
+}
+#logo{
+	display:none;
+}
+#small-logo{
+	display:none;
+}
+}
+@media (min-width: 630px) and (max-width:1000px){
+	#reg{
+		margin:15vh 15vw;
+	}
+	#small-logo{
+	height:10vh;
+	float:left;
+    display: block;
+	margin:1vh 2vh;
+}
+#mid-logo{
+	display:none;
+}
+#logo{
+	display:none;
+}
+	
+}
+
+video{
+	width:100vw;
+}
+	#news img{
+		margin:auto;display:block;width:100vw;
+	}
+@media (max-width: 630px) {
+	#reg{
+		
+	margin: 5vh 10vw;
+	
+	}
+	
+	
+	#small-logo{
+	height:10vh;
+    display: block;
+	margin:1vh 2vh;
+}
+#mid-logo{
+	display:none;
+}
+#logo{
+	display:none;
+}
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a{
+	float:left;
+   }
+  .topnav a.icon {
+	 position: fixed;
+    right: 0;
+    top: 0;
+    display: block;
+  }
+  
+  .topnav.responsive {position: fixed;
+  }
+  .topnav.responsive #small-logo{
+	  
+	  float:none;
+  }
+  .topnav.responsive .icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+	  height:auto;
+    display: block;
+    float: none;
+    text-align: left;
+  }
+}
+	
+#news p{
+	text-align:center;
+}
+.uneven img{
+		/*float:right;*/
+	}
+	#news .uneven p{
+		/*float:right;*/
+	}
+#news{
+	margin:10vh 10vw;
+
+}
+#news div{
+	margin-bottom:10vh;
+}
+.footer{
+	background-color:var(--primary-color);
+}
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 4px;
+  background-color: var(--regular-text);
+  margin: 2px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 3px);
+  transform: rotate(-45deg) translate(-5px, 3px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-4px, -4px);
+  transform: rotate(45deg) translate(-4px, -4px);
+}
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border:none;
+  border-radius: 100%;
+  background-color:var(--primary-color);
+}
+.carousel-indicators li.active{
+	background-color:var(--second-highlight-color);
+}
+.carousel-inner.item{
+	width:100vh;
+}
+.dim {
+    height:100%;
+    width:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:1 !important;
+    background-color:black;
+    filter: alpha(opacity=75); /* internet explorer */
+    -khtml-opacity: 0.75;      /* khtml, old safari */
+      -moz-opacity: 0.75;      /* mozilla, netscape */
+           opacity: 0.75;      /* fx, safari, opera */
+}
+.table{
+}
+th{
+	color:#fff;
+	font-size:4vh;
+}
+td .img{
+	margin:auto;display:block;width:10vh;
+}
+td{
+	text-align:center;
+	cursor:pointer;
+	color:white;
+	font-size:3vh;
+}
+hr{
+	background-color:var(--second-highlight-color);
+	width:70vw;
+	height:3px;
+}
+h1, h2{
+	text-align:center;
+	color:#F4E8C1;
+}
+h1{
+	font-size:7vh;
+}
+h2{
+	font-size:4vh;
+
+}
+p{
+	font-size:3vh;
+}
+.inf{
+	margin-top:5vh;
+	height:100%;
+	line-height:100%;
+}
+
+.txt{
+	vertical-align:middle;
+	resize:none;
+	background-color:transparent;
+	color:var(--highlight-text);
+	border:0vh;
+	border-bottom:2px solid var(--highlight-text);
+}
+.txt::placeholder{
+	color:var(--highlight-text);
+}
+p{
+	color:white;
+}
+h4{
+	font-size:3vh;
+}
+#festivalinfo{
+	padding:0px;
+	
+	text-align:center;
+	margin-left:2vh;
+	margin-right:2vh;
+	margin-bottom:5vh;
+}
+#news h2{
+	
+	text-decoration:underline;
+}
+#festivalinfo h2{
+	text-decoration:underline;
+}
+#festivalinfo h3{
+	font-size:4vh;
+	
+}
+#films{
+	color:var(--highlight-text);
+	cursor:pointer;
+}
+#ticketNum{
+	color:var(--highlight-text);
+	cursor:pointer;
+}
+
+#register{
+	background-color:white;
+	border-radius:30px;
+	border:1px solid white;
+	padding:1vh;
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}

@@ -1,0 +1,230 @@
+<html>
+ <head>
+   <title>Naverra International Film Festival</title>
+   <link rel="icon" href="imgs/logo.png">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <script src="js.js"></script>
+  <script src="schedule.js"></script>
+ </head>
+ <body>
+   <div class="topnav full" id="myNav">
+      <img src="imgs/logo-header.png" id="logo">
+	  <img src="imgs/mid-logo.png" id="mid-logo">
+	  <img src="imgs/logo.png" id="small-logo">
+      <a href="register.html">Register</a>
+      <a href="schedule.html"class="active">Schedule</a>
+      <a href="index.html" >Home</a>
+      <a href="javascript:void(0);" id="icon-container" class="icon" onclick="openMenu()">
+        <div class="container" id="icon">
+         <div class="bar1" id="bar1"></div>
+         <div class="bar2" id="bar2"></div>
+         <div class="bar3" id="bar3"></div>
+        </div>
+      </a>
+   </div>
+   
+   <div onclick="closeNav()">
+   
+     <div id="dim"></div>
+	 <div class="containter-fluid" style="position:relative;top:20vh;">
+	 <h1 >Daily schedule</h1>
+	 <hr></hr>
+	 </div>
+	 <br><br>
+	 <div >
+	 
+	 <div class="container-fluid" style="padding:0;overflow:hidden;position:absolute;top:50vh;text-align:center">
+				  <!--1 and 2-->
+				  <div class="row"style="padding:5vw;padding-top:5vh;">
+					<div class="col-12 col-md-6">
+						<table class="table table-image " >
+						  <thead>
+							<tr class="text-center" >
+							   <th class="text-center" colspan="2">Sept. 10th</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr onclick="openTrailer(0)" data-toggle="modal" data-target="#myModal">
+							  <td class="w-25" >
+								  <img src="imgs/apollo11.jpg" class="img-fluid img-thumbnail" alt="Apollo 11">
+							  </td>
+							  <td class="align-middle">Apollo11<br><br>18:00-20:00</td>
+							</tr>
+							<tr onclick="openTrailer(1)" data-toggle="modal" data-target="#myModal">
+							  <td class="w-25">
+								  <img src="imgs/1917.jpg" class="img-fluid img-thumbnail" alt="1917">
+							  </td>
+							  <td class="align-middle">1917<br><br>20:00-22:00</td>
+							</tr>
+							<tr onclick="openTrailer(2)" data-toggle="modal" data-target="#myModal">
+							  <td class="w-25">
+								  <img src="imgs/dark_waters.jpg" class="img-fluid img-thumbnail" alt="Dark waters">
+							  </td>
+							  <td class="align-middle">Dark waters<br><br>22:00-00:00</td>
+							</tr>
+						  </tbody>
+						</table>   
+					</div>
+					<div class="col-12 col-md-6">
+						<table class="table table-image">
+						  <thead>
+							<tr class="text-center" >
+							   <th class="text-center" colspan="2">Sept. 11th</th>
+							</tr>
+						  </thead>
+						  <tbody>
+						   <tr onclick="openTrailer(3)" data-toggle="modal" data-target="#myModal">
+							  <td class="w-25" >
+								  <img src="imgs/john_wick.jpg" class="img-fluid img-thumbnail" alt="John Wick">
+							  </td>
+							  <td class="align-middle">John Wick<br><br>18:00-20:00</td>
+							</tr>
+							<tr onclick="openTrailer(4)" data-toggle="modal" data-target="#myModal">
+							  <td class="w-25">
+								  <img src="imgs/joker.jpg" class="img-fluid img-thumbnail" alt="Joker">
+							  </td>
+							  <td class="align-middle">Joker<br><br>20:00-22:00</td>
+							</tr>
+							<tr onclick="openTrailer(5)" data-toggle="modal" data-target="#myModal">
+							  <td class="w-25">
+								  <img src="imgs/little_women.jpg" class="img-fluid img-thumbnail" alt="Little Women">
+							  </td>
+							  <td class="align-middle">Little Women<br><br>22:00-00:00</td>
+							</tr>
+						  </tbody>
+						</table>   
+					</div>
+				</div>
+				  <!--3 and 4-->
+						<div class="row"style="padding:5vw;padding-top:5vh;">
+							<div class="col-12 col-md-6">
+								<table class="table table-image " >
+								  <thead>
+									<tr class="text-center" >
+									   <th class="text-center" colspan="2">Sept. 12th</th>
+									</tr>
+								  </thead>
+								  <tbody>
+									<tr onclick="openTrailer(6)" data-toggle="modal" data-target="#myModal">
+									  <td class="w-25" >
+										  <img src="imgs/marriage_story.jpg" class="img-fluid img-thumbnail" alt="Marriage story">
+									  </td>
+									  <td class="align-middle">Marriage story<br><br>18:00-20:00</td>
+									</tr>
+									<tr onclick="openTrailer(7)" data-toggle="modal" data-target="#myModal">
+									  <td class="w-25">
+										  <img src="imgs/midsommar.jpg" class="img-fluid img-thumbnail" alt="Midsommar">
+									  </td>
+									  <td class="align-middle">Midsommar<br><br>20:00-22:00</td>
+									</tr>
+									<tr onclick="openTrailer(8)" data-toggle="modal" data-target="#myModal">
+									  <td class="w-25">
+										  <img src="imgs/parasite.jpg" class="img-fluid img-thumbnail" alt="Parasite">
+									  </td>
+									  <td class="align-middle">Parasite<br><br>22:00-00:00</td>
+									</tr>
+								  </tbody>
+								</table>   
+							</div>
+							<div class="col-12 col-md-6">
+								<table class="table table-image">
+								  <thead>
+									<tr class="text-center" >
+									   <th class="text-center" colspan="2">Sept. 13th</th>
+									</tr>
+								  </thead>
+								  <tbody>
+									<tr onclick="openTrailer(9)" data-toggle="modal" data-target="#myModal">
+									  <td class="w-25" >
+										  <img src="imgs/the_irishman.jpg" class="img-fluid img-thumbnail" alt="The Irishman">
+									  </td>
+									  <td class="align-middle">The Irishman<br><br>18:00-20:00</td>
+									</tr>
+									<tr onclick="openTrailer(10)" data-toggle="modal" data-target="#myModal">
+									  <td class="w-25">
+										  <img src="imgs/the_lighthouse.jpg" class="img-fluid img-thumbnail" alt="The Lighthouse">
+									  </td>
+									  <td class="align-middle">The Lighthouse<br><br>20:00-22:00</td>
+									</tr>
+									<tr onclick="openTrailer(11)" data-toggle="modal" data-target="#myModal">
+									  <td class="w-25">
+										  <img src="imgs/the_two_popes.jpg" class="img-fluid img-thumbnail" alt="The Two Popes">
+									  </td>
+									  <td class="align-middle">The Two Popes<br><br>22:00-00:00</td>
+									</tr>
+								  </tbody>
+								</table>   
+							</div>
+						  </div>
+	
+	      <div class="footer" id="footer">
+	  <div style="margin-left:10vw;margin-right:10vw;text-align:center">
+	  <div>
+	  <br><br>
+	  <div class="row">
+	  	  <div class="col-12 col-md-6 info" >
+		  <h1>More info</h1>
+		  
+		  <h4><i class="fa fa-phone"> +34 663 30 30 60</i></h4>
+		  <h4><i class="fa fa-envelope"> info@navarrafestival.com</i></h4>
+		  </div>
+	  	  <div class="col-12 col-md-6 info" >
+		  <h1>Follow us</h1>
+		  <h4><a href="https://www.instagram.com/navarrafestival/"><i class="fa fa-instagram"></i></a>
+		  <a href="https://twitter.com/NIFFestival"><i class="fa fa-twitter"></i></a>
+		  <a href="https://www.facebook.com/Navarrafestival/"><i class="fa fa-facebook"></i></a></h4>
+		  </div>
+	  </div>
+	  <div >
+	  <br><br>
+	  <a class="weatherwidget-io" href="https://forecast7.com/en/42d81n1d65/pamplona/" 
+	     data-label_1="PAMPLONA" data-label_2="WEATHER" data-icons="Climacons Animated" data-days="5" data-theme="dark"
+		 data-basecolor="#040F0F" data-accent="#000103" data-textcolor="#f2f2f2" 
+		 data-highcolor="#ffffff" data-lowcolor="#d7d7d7" 
+		 data-suncolor="#de792d" data-mooncolor="#eeeee" 
+		 data-cloudcolor="#ffffff" data-cloudfill="#323232" 
+		 data-raincolor="#8bc1e5" data-snowcolor="#ffffff"  >
+	     PAMPLONA WEATHER
+	  </a>
+	  </div>
+	  </div>
+    </div>
+	</div>
+            
+	</div>
+		
+<div id="myModal" class="modal fade" style="position:fixed;top:20vh" >
+  <div class="modal-dialog ">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <iframe class="embed-responsive embed-responsive-16by9" style="height:50vh;" src="" id="frame"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+      </div>
+    </div>
+	</div>
+
+</div>
+     
+	 
+	 
+	 
+   </div>
+  </body>
+</html>
